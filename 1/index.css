@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,900&family=Nunito:wght@300&display=swap');
+
+body {
+    background-image: url(Ihor.jpg);
+    font-size: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Mulish', sans-serif;
+    font-size: 96px;
+}
+
+blockquote {
+    transform: rotate(0.5turn);
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: red;
+}
+
+span:nth-of-type(15n+1) {
+    color: red;
+}
+
+span:nth-of-type(15n+2) {
+    color: orange;
+}
+
+span:nth-of-type(15n+3) {
+    color: yellow;
+}
+
+span:nth-of-type(15n+4) {
+    color: green;
+}
+
+span:nth-of-type(15n+5) {
+    color: blue;
+}
+
+span:nth-of-type(15n+6) {
+    color: purple;
+}
+
+span:nth-of-type(15n+7) {
+    color: white;
+}
+
+span:nth-of-type(15n+8) {
+    color: pink;
+}
+
+span:nth-of-type(15n+9) {
+    color: turquoise;
+}
+
+span:nth-of-type(15n+10) {
+    color: brown;
+}
+
+span:nth-of-type(15n+11) {
+    color: orchid;
+}
+
+span:nth-of-type(15n+12) {
+    color: gray;
+}
+
+span:nth-of-type(15n+13) {
+    color: coral;
+}
+
+span:nth-of-type(15n+14) {
+    color: cyan;
+}
+
+span:nth-of-type(15n+15) {
+    color: plum;
+}
+
+span:nth-of-type(10n+1) {
+    text-decoration: underline;
+}
+
+span:nth-of-type(10n+2) {
+    text-decoration: underline dotted;
+}
+
+span:nth-of-type(10n+3) {
+    vertical-align: sub;
+}
+
+span:nth-of-type(10n+4) {
+    text-decoration: underline overline;
+}
+
+span:nth-of-type(10n+5) {
+    text-decoration: overline;
+}
+
+span:nth-of-type(10n+6) {
+    text-decoration: line-through;
+}
+
+span:nth-of-type(10n+7) {
+    font-weight: bold;
+}
+
+span:nth-of-type(10n+8) {
+    font-style: italic;
+}
+
+span:nth-of-type(10n+9) {
+    vertical-align: super;
+}
+
+span:nth-of-type(10n+10) {
+    text-decoration: wavy underline;
+}
+
+.white {
+    color: white;
+    font: bold 20px Arial;
+    margin-bottom: 60px;
+}
+
+.parent {
+    margin: 20px auto;
+    width: 32%;
+    border-top: 8px ridge red;
+    border-left: 5px dotted blue;
+    border-bottom: 6px double orange;
+    border-right: 7px dashed green;
+    background-color: black;
+    background-clip: padding-box;
+}
+
+img {
+    max-width: 50%;
+    border: 3px solid white;
+    margin: 50px auto;
+}
+
+.hui {
+    color: red;
+}
+
+@media screen and (min-width: 500px){
+    .hui{
+        color: green;
+    }
+}
