@@ -1,0 +1,20 @@
+#menu {
+    display: flex;
+    margin-left: 30px;
+    margin-top: 37px;
+}
+
+#menu a {
+    margin-right: 10px;
+    padding: 12px 27px;
+    font: 15px Arial;
+    text-decoration: none;
+    color: white;
+    border: 1px solid mediumseagreen;
+    background-color: mediumseagreen;
+}
+
+#menu a:hover, #menu a.active {
+    color: mediumseagreen;
+    background-color: white;
+}
