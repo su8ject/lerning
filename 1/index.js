@@ -1,13 +1,9 @@
-// start()
+const lyrics = document.querySelector('.lyrics')
 
-// window.addEventListener('resize', start);
+function handler(event){
+    if (event.target.tagName = 'SPAN'){
+        alert(event.target.innerText)
+    }
+}
 
-// function start(){
-//     if (document.documentElement.clientWidth > 483){
-//         document.getElementsByClassName('hui')[0].style.color = 'red';
-//     } else {
-//         document.getElementsByClassName('hui')[0].style.color = 'green';
-//     }
-//   }
-
-
+lyrics.addEventListener('click', handler)
