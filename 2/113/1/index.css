@@ -1,0 +1,40 @@
+body {
+    width: 1200px;
+    margin: 30px auto;
+}
+
+header, div, footer, body{
+    border: 1px solid black;
+}
+
+header, div, footer {
+    padding: 10px;
+}
+
+header{
+    height: 250px;
+}
+
+main {
+    display: flex;
+    height: 900px;
+}
+
+footer {
+    height: 80px;
+}
+
+#right {
+    width: 280px;
+    order: 1;
+}
+
+#left {
+    width: 280px;
+    margin-right: 30px;
+}
+
+#content {
+    width: 580px;
+    margin-right: 30px;
+}
