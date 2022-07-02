@@ -1,41 +1,46 @@
 body {
-    width: 1000px;
-    margin: 30px auto;
+  width: 1000px;
+  margin: 30px auto;
 }
 
-header, div, footer, body{
-    border: 1px solid black;
+header,
+div,
+footer,
+body {
+  border: 1px solid black;
 }
 
-header, div, footer {
-    padding: 10px;
+header,
+div,
+footer {
+  padding: 10px;
 }
 
-header{
-    height: 250px;
+header {
+  height: 250px;
 }
 
 main {
-    display: flex;
-    height: 900px;
+  display: flex;
+  height: 900px;
 }
 
 footer {
-    height: 80px;
+  height: 80px;
 }
 
 #right {
-    width: 180px;
-    order: 1;
+  width: 180px;
+  order: 1;
 }
 
 #left {
-    width: 180px;
-    margin-right: 20px;
+  width: 180px;
+  margin-right: 20px;
 }
 
 #content {
-    width: 540px;
-    margin-right: 20px;
-    order: -1;
+  width: 540px;
+  margin-right: 20px;
+  order: -1;
 }

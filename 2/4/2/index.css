@@ -1,35 +1,40 @@
 body {
-    width: 1200px;
-    margin: 30px auto;
+  width: 1200px;
+  margin: 30px auto;
 }
 
-header, div, footer, body{
-    border: 1px solid black;
+header,
+div,
+footer,
+body {
+  border: 1px solid black;
 }
 
-header, div, footer {
-    padding: 10px;
+header,
+div,
+footer {
+  padding: 10px;
 }
 
-header{
-    height: 250px;
+header {
+  height: 250px;
 }
 
 main {
-    display: flex;
-    height: 900px;
+  display: flex;
+  height: 900px;
 }
 
 footer {
-    height: 80px;
+  height: 80px;
 }
 
 #sidebar {
-    width: 280px;
-    order: 1;
+  width: 280px;
+  order: 1;
 }
 
 #content {
-    width: 880px;
-    margin-right: 40px;
+  width: 880px;
+  margin-right: 40px;
 }

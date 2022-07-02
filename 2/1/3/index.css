@@ -1,21 +1,22 @@
 #menu {
-    display: flex;
-    width: 720px;
-    margin-left: 30px;
-    margin-top: 40px;
-    background-color: mediumseagreen;
+  display: flex;
+  width: 720px;
+  margin-left: 30px;
+  margin-top: 40px;
+  background-color: mediumseagreen;
 }
 
 #menu a {
-    text-align: center;
-    padding: 15px 40px;
-    font: 15px Arial;
-    text-decoration: none;
-    color: white;
-    background-color: mediumseagreen;
+  text-align: center;
+  padding: 15px 40px;
+  font: 15px Arial;
+  text-decoration: none;
+  color: white;
+  background-color: mediumseagreen;
 }
 
-#menu a:hover, #menu a.active {
-    color: white;
-    background-color: forestgreen;
+#menu a:hover,
+#menu a.active {
+  color: white;
+  background-color: forestgreen;
 }

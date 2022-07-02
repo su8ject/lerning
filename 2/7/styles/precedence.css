@@ -1,0 +1,37 @@
+.precedence {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  background: linear-gradient(
+    to left,
+    #2d5f3b 33.3%,
+    #f74c55 33.3% 66.6%,
+    #ee732f 66.6% 100%
+  );
+  padding: 50px;
+}
+
+.precedence-block {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 30%;
+  min-width: 200px;
+}
+
+.precedence-block-header {
+  display: flex;
+  align-items: center;
+}
+
+.precedence-block-icon {
+  height: 60px;
+  margin-right: 10px;
+}

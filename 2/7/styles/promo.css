@@ -1,0 +1,38 @@
+.promo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/bg2.png) top center no-repeat;
+  height: 500px;
+}
+
+.promo-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 650px;
+  width: 100%;
+}
+
+.promo-block-header {
+  margin: 0;
+  padding-bottom: 50px;
+  font-size: 42px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.promo-grad {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+  height: 10px;
+  background: repeating-linear-gradient(
+    to left,
+    #ee732f 50px,
+    #f74c55 50px 100px,
+    #2d5f3b 100px 150px,
+    #404040 150px 200px,
+    #fb636b 200px 250px
+  );
+}
