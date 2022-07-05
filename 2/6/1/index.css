@@ -55,11 +55,6 @@ h3 {
   font-size: 17px;
 }
 
-img {
-  width: 500px;
-  height: 350px;
-}
-
 p {
   margin: 10px 0;
 }
@@ -88,4 +83,9 @@ td {
 #left {
   width: 500px;
   margin-right: 25px;
+}
+
+.img-bee {
+  width: 500px;
+  height: 350px;
 }
