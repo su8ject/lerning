@@ -1,0 +1,100 @@
+.greeting {
+  display: flex;
+  justify-content: center;
+  background: url(../img/horse-in-greeting.png) 1000px 50px no-repeat;
+  background-color: #ddd;
+  min-height: 850px;
+}
+
+.greeting--wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1400px;
+  width: 100%;
+}
+
+.greeting--header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 100px;
+}
+
+.greeting--header--text {
+  text-align: center;
+  font-size: var(--size-header);
+}
+
+.greeting--text {
+  max-width: 720px;
+  margin: 20px;
+  font-size: var(--size-text);
+}
+
+.greeting--push-button-container {
+  display: flex;
+  align-items: center;
+  margin: 70px 0;
+}
+
+.greeting--button {
+  padding: var(--size-button);
+  margin-left: 20px;
+  font-size: 20px;
+  border: 1px solid #c0ab77;
+  background: unset;
+}
+
+.greeting--line-with-button {
+  width: 10vw;
+  height: 1px;
+  background-color: #c0ab77;
+  border: none;
+}
+
+.greeting--button:hover {
+  color: #848484;
+  border: 1px solid #848484;
+  cursor: pointer;
+}
+
+.greeting--button:hover ~ .greeting--line-with-button {
+  color: #848484;
+  border: 1px solid #848484;
+}
+
+@media screen and (max-width: 768px) {
+  .greeting {
+    min-height: 400px;
+  }
+
+  .greeting--wrapper {
+    text-align: center;
+    align-items: center;
+  }
+
+  .greeting--header {
+    margin-bottom: 0;
+  }
+
+  .greeting--text,
+  .greeting--text {
+    margin: 10px;
+  }
+
+  .greeting--push-button-container,
+  .greeting--button {
+    margin: 0;
+  }
+
+  .greeting--line-with-button {
+    width: 0;
+  }
+
+  .greeting--button:hover ~ .greeting--line-with-button {
+    border: none;
+  }
+}
