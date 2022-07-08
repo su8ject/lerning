@@ -1,85 +1,87 @@
 body {
-    margin: 0;
+  margin: 0;
 }
 
 #menu {
-    display: flex;
-    background-color: orange;
+  display: flex;
+  background-color: orange;
 }
 
-h1, h2 {
-    text-align: center;
-    font-weight: normal;
-    color: chocolate;
+h1,
+h2 {
+  text-align: center;
+  font-weight: normal;
+  color: chocolate;
 }
 
 h1 {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 h2 {
-    font-size: 25px;
+  font-size: 25px;
 }
 
-p{
-    margin: 10px;
-    text-indent: 55px;
-    color: orange;
-    text-align: justify;
-    line-height: 32px;
-    font-size: 17px;
+p {
+  margin: 10px;
+  text-indent: 55px;
+  color: orange;
+  text-align: justify;
+  line-height: 32px;
+  font-size: 17px;
 }
 
 #menu a {
-    padding: 15px 25px;
-    
-    text-align: center; 
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 15px;
+  padding: 15px 25px;
 
-    color: white;
-    text-decoration: none;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+
+  color: white;
+  text-decoration: none;
 }
 
-#menu a:hover, #menu a.active {
-    background-color: white;
-    color: orange;
+#menu a:hover,
+#menu a.active {
+  background-color: white;
+  color: orange;
 }
 
 .border--orange {
-    margin: 1px auto;
-    width: 900px;
-    border: 1px solid orange;
-    border-top: none;
+  margin: 1px auto;
+  width: 900px;
+  border: 1px solid orange;
+  border-top: none;
 }
 
 p a {
-    font-weight: bold;
-    color: orange;
+  font-weight: bold;
+  color: orange;
 }
 
 p a:hover {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 footer {
-    margin-top: 17px;
-    display: flex;
-    justify-content: center;
+  margin-top: 17px;
+  display: flex;
+  justify-content: center;
 }
 
 footer a {
-    color: orange;
-    margin-left: 25px;
-    text-decoration: none;
-    font-size: 13px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+  color: orange;
+  margin-left: 25px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 footer a:hover {
-    color: black;
-    text-decoration: underline;
+  color: black;
+  text-decoration: underline;
 }

@@ -1,0 +1,42 @@
+a {
+  font-size: 16px;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 34px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: normal;
+}
+
+p {
+  font-size: 14px;
+}
+
+button {
+  padding: 5px 30px;
+  border: 2px solid white;
+  border-radius: 10px;
+  background: unset;
+  font-size: 24px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.white {
+  color: white;
+}

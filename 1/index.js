@@ -1,9 +1,9 @@
-const lyrics = document.querySelector('.lyrics')
+const lyrics = document.querySelector(".lyrics");
 
-function handler(event){
-    if (event.target.tagName = 'SPAN'){
-        alert(event.target.innerText)
-    }
+function handler(event) {
+  if ((event.target.tagName = "SPAN")) {
+    alert(event.target.innerText);
+  }
 }
 
-lyrics.addEventListener('click', handler)
+lyrics.addEventListener("click", handler);
