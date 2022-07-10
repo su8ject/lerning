@@ -1,17 +1,91 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+}
+
+.header--social-networks {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 10px;
+  gap: 20px;
+  min-height: 50px;
+  width: 100%;
+  background: #363636;
+}
+
+.social-networks {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 200px;
+  width: 100%;
+}
+
+.header--social-networks--icon {
+  height: 15px;
+  width: 15px;
+  object-fit: contain;
+}
+
+.header--social-networks--icon:hover {
+  opacity: 0.5;
+}
+
+.header--form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-right: 40px;
+}
+
+.header--form--input {
+  display: flex;
+  gap: 5px;
+}
+
+.header--form--email {
+  border: 1px solid #b89f5c;
+  background: #363636;
+}
+
+.header--form--submit {
+  background: unset;
+  color: #b89f5c;
+  border: none;
+}
+
+.header--form--text {
+  color: #646464;
+  font-size: 13px;
+  text-decoration: underline;
+}
+
+.header--social-networks--cross {
+  position: absolute;
+  right: 20px;
+  font-size: 30px;
+  color: #646464;
+}
+
+.header--social-networks--cross:hover {
+  cursor: pointer;
+}
+
 .header-with-navigation {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  padding: 30px 0;
+  min-height: 210px;
   width: 100%;
-  background: #00000036;
+  background: #00000050;
 }
 
 header .logo {
-  width: 80px;
-  height: 105px;
   margin-bottom: 25px;
 }
 

@@ -52,6 +52,11 @@
   object-fit: scale-down;
 }
 
+.footer--social-networks--icon:hover {
+  border: 1px solid white;
+  cursor: pointer;
+}
+
 .footer--subscribe {
   display: flex;
   flex-direction: column;
