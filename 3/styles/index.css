@@ -1,0 +1,111 @@
+@import url(header.css);
+@import url(reset.css);
+@import url(greeting.css);
+@import url(more-information.css);
+@import url(services.css);
+@import url(price.css);
+@import url(news.css);
+@import url(feedback.css);
+@import url(gallery.css);
+@import url(footer.css);
+
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
+* {
+  font-family: "Lora", serif;
+}
+
+:root {
+  --size-header: 33px;
+  --size-text: 25px;
+  --size-button: 20px 50px;
+}
+
+.gold {
+  color: #c0ab77;
+}
+
+.grey {
+  color: #848484;
+}
+
+.logo {
+  width: 80px;
+  height: 105px;
+}
+
+.horse-theme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 212px;
+  background: url(../img/header-bg.png);
+  min-height: 872px;
+  width: 100%;
+}
+
+.horse-theme--header {
+  margin: 0 10px;
+  color: white;
+  font-size: 70px;
+  text-align: center;
+  font-weight: normal;
+  max-width: 1000px;
+}
+
+.motto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  font-size: 18px;
+  background: #363636;
+  color: #b89f5c;
+  min-height: 70px;
+}
+
+.motto--text {
+  text-align: center;
+}
+
+.header--right-lines,
+.header--left-lines {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: var(--size-header);
+}
+
+.header--left-lines {
+  align-items: flex-end;
+}
+
+.small-line {
+  width: 10vw;
+  height: 1px;
+  background-color: #c0ab77;
+  border: none;
+}
+
+.mid-line {
+  width: 15vw;
+  height: 1px;
+  background-color: #848484;
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  .horse-theme--header {
+    font-size: 40px;
+  }
+
+  :root {
+    --size-header: 20px;
+    --size-text: 14px;
+    --size-button: 10px 25px;
+  }
+
+  .greeting--gold-line {
+    width: 0;
+  }
+}

@@ -1,0 +1,57 @@
+.feedback {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.feedback--container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 500px;
+}
+
+.feedback-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedback--arrow {
+  height: 30px;
+}
+
+.feedback--foto {
+  height: 144px;
+  border-radius: 50%;
+}
+
+.feedback--text {
+  font-size: var(--size-text);
+  max-width: 700px;
+  margin: 30px 0;
+  text-align: center;
+}
+
+.feedback--name {
+  font-size: var(--size-text);
+  margin-bottom: 15px;
+}
+
+.feedback--company {
+  font-size: 17px;
+}
+
+.feedback--display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: inside;
+}
+
+@media screen and (max-width: 768px) {
+  .feedback--company {
+    font-size: 14px;
+  }
+}
