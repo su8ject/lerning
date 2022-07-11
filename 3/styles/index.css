@@ -49,6 +49,7 @@
   color: white;
   font-size: 70px;
   text-align: center;
+  text-transform: uppercase;
   font-weight: normal;
   max-width: 1000px;
 }
@@ -66,6 +67,7 @@
 
 .motto--text {
   text-align: center;
+  text-transform: uppercase;
 }
 
 .header--right-lines,

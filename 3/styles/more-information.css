@@ -29,6 +29,7 @@
 
 .more-information--header {
   margin: 15px 0;
+  text-transform: uppercase;
   font-size: var(--size-header);
 }
 
@@ -52,6 +53,7 @@
   background: #c0ab77;
   border: 1px solid #c0ab77;
   transition: 0.3s;
+  text-transform: uppercase;
 }
 
 .more-information--button:hover {
