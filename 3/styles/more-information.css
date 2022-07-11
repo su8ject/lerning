@@ -56,6 +56,10 @@
   text-transform: uppercase;
 }
 
+a.more-information--button {
+  display: inline-block;
+}
+
 .more-information--button:hover {
   cursor: pointer;
   background: #52482e;
