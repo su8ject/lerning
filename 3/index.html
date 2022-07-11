@@ -16,13 +16,13 @@
           <a href="#"><img class="header--social-networks--icon" src="./img/pinterest-icon.png"><span class="sr-only">Pinterest</span></a>
           <a href="#"><img class="header--social-networks--icon" src="./img/inst-icon.png"><span class="sr-only">Instagram</span></a>
         </div> 
-        <div class="header--form">
+        <form method="POST" action="/" class="header--form">
           <span class="header--form--text">Sing up to newsletter!</span>
           <div class="header--form--input">
-            <input type="email" class="header--form--email" placeholder=" Your email" required>
+            <input type="email" name="email" class="header--form--email" placeholder="Your email" required>
             <input type="submit" class="header--form--submit" value="→">
           </div>
-        </div>
+        </form>
         <button type="button" class="header--social-networks--cross" aria-label="Close header">&times;</button>
       </div>
       <div class="header-with-navigation">
@@ -342,17 +342,17 @@
         </div>
         <div class="footer--subscribe">
           <span class="footer--subscribe--text">Subscribe to our newsletter</span>
-          <div class="footer--subscribe--form">
+          <form method="POST" action="/" class="footer--subscribe--form">
             <input
                 type="email"
-                class="footer--input"
-                name="email-form"
+                name="email"
                 placeholder=" your@email.com"
                 required
+                class="footer--input"
               />
-              <button type="submit" form="email-form" class="footer--button">Send</button>
+              <button type="submit" class="footer--button">Send</button>
           </div>
-        </div>
+        </form>
       </div>
     </footer>
     </div>
