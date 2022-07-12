@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(../img/more-information-bg.png);
+  background: url(../img/theme/more-information-bg.png);
   text-align: center;
   min-height: 480px;
   transition: 0.3s;
@@ -50,8 +50,8 @@
   padding: var(--size-button);
   color: white;
   font-size: 20px;
-  background: #c0ab77;
-  border: 1px solid #c0ab77;
+  background: var(--gold-color);
+  border: 1px solid var(--gold-color);
   transition: 0.3s;
   text-transform: uppercase;
 }
@@ -80,6 +80,7 @@ a.more-information--button {
   max-width: 280px;
   width: 100%;
   margin-right: 5px;
+  padding-left: 5px;
   font-size: var(--size-text);
 }
 
@@ -100,5 +101,11 @@ a.more-information--button {
   .membership,
   .newsletter {
     min-height: auto;
+  }
+
+  .membership--text,
+  .newsletter--text {
+    margin: 0;
+    margin-bottom: 20px;
   }
 }

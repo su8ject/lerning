@@ -29,7 +29,7 @@
 }
 
 .footer--navigation--link:hover {
-  color: #848484;
+  color: var(--grey-color);
   text-decoration: underline;
 }
 
@@ -45,11 +45,12 @@
 }
 
 .footer--social-networks--icon {
+  padding: 2px;
   width: 40px;
   height: 40px;
-  border: 1px solid #848484;
+  border: 1px solid var(--grey-color);
   border-radius: 50%;
-  object-fit: scale-down;
+  object-fit: contain;
 }
 
 .footer--social-networks--icon:hover {
@@ -79,7 +80,7 @@
 }
 
 .footer--subscribe--form {
-  border: 1px solid #c0ab77;
+  border: 1px solid var(--gold-color);
 }
 
 .footer--input {

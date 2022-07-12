@@ -1,7 +1,7 @@
 .greeting {
   display: flex;
   justify-content: center;
-  background: url(../img/horse-in-greeting.png) 1000px 50px no-repeat;
+  background: url(../img/theme/horse-in-greeting.png) 1000px 50px no-repeat;
   background-color: #ddd;
   min-height: 850px;
 }
@@ -11,7 +11,7 @@
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  max-width: 1400px;
+  max-width: 1300px;
   width: 100%;
 }
 
@@ -31,7 +31,8 @@
 
 .greeting--text {
   max-width: 720px;
-  margin: 20px;
+  margin: 20px 30px;
+  text-align: justify;
   font-size: var(--size-text);
 }
 
@@ -45,26 +46,26 @@
   padding: var(--size-button);
   margin-left: 20px;
   font-size: 20px;
-  border: 1px solid #c0ab77;
+  border: 1px solid var(--gold-color);
   background: unset;
 }
 
 .greeting--line-with-button {
   width: 10vw;
   height: 1px;
-  background-color: #c0ab77;
+  background-color: var(--gold-color);
   border: none;
 }
 
 .greeting--button:hover {
-  color: #848484;
-  border: 1px solid #848484;
+  color: var(--grey-color);
+  border: 1px solid var(--grey-color);
   cursor: pointer;
 }
 
 .greeting--button:hover ~ .greeting--line-with-button {
-  color: #848484;
-  border: 1px solid #848484;
+  color: var(--grey-color);
+  border: 1px solid var(--grey-color);
 }
 
 @media screen and (max-width: 768px) {
@@ -81,9 +82,8 @@
     margin-bottom: 0;
   }
 
-  .greeting--text,
   .greeting--text {
-    margin: 10px;
+    margin: 10px 20px;
   }
 
   .greeting--push-button-container,
