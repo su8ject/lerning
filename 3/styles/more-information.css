@@ -5,7 +5,6 @@
   background: url(../img/theme/more-information-bg.png);
   text-align: center;
   min-height: 480px;
-  transition: 0.3s;
 }
 
 .membership,
@@ -29,7 +28,6 @@
 
 .more-information--header {
   margin: 15px 0;
-  text-transform: uppercase;
   font-size: var(--size-header);
 }
 
@@ -53,7 +51,6 @@
   background: var(--gold-color);
   border: 1px solid var(--gold-color);
   transition: 0.3s;
-  text-transform: uppercase;
 }
 
 a.more-information--button {
