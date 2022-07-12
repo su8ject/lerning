@@ -36,7 +36,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid #c0ab77;
+  border: 1px solid var(--gold-color);
 }
 
 .price--container--item-name {
@@ -49,7 +49,10 @@
   color: white;
   font-size: 40px;
   margin-top: 10px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid var(--gold-color);
 }
 
 .price--container--item-text {
@@ -72,7 +75,7 @@
 
   .price--container--item-value {
     margin-top: 0;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
     font-size: 22px;
   }
 
