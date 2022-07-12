@@ -11,54 +11,54 @@
     <header class="header">
       <div class="header--social-networks">
         <div class="social-networks">
-          <a href=""><img class="header--social-networks--icon" src="./img/twitter-icon.png"></a>
-          <a href=""><img class="header--social-networks--icon" src="./img/fb-icon.png"></a>
-          <a href=""><img class="header--social-networks--icon" src="./img/pinterest-icon.png"></a>
-          <a href=""><img class="header--social-networks--icon" src="./img/inst-icon.png"></a>
+          <a href="#"><img class="header--social-networks--icon" src="./img/twitter-icon.png"><span class="sr-only">Twitter</span></a>
+          <a href="#"><img class="header--social-networks--icon" src="./img/fb-icon.png"><span class="sr-only">Facebook</span></a>
+          <a href="#"><img class="header--social-networks--icon" src="./img/pinterest-icon.png"><span class="sr-only">Pinterest</span></a>
+          <a href="#"><img class="header--social-networks--icon" src="./img/inst-icon.png"><span class="sr-only">Instagram</span></a>
         </div> 
-        <div class="header--form">
+        <form method="POST" action="/" class="header--form">
           <span class="header--form--text">Sing up to newsletter!</span>
           <div class="header--form--input">
-            <input type="email" class="header--form--email" placeholder=" Your email" required>
+            <input type="email" name="email" class="header--form--email" placeholder="Your email" required>
             <input type="submit" class="header--form--submit" value="→">
           </div>
-        </div>
-        <span class="header--social-networks--cross">&times;</span>
+        </form>
+        <button type="button" class="header--social-networks--cross" aria-label="Close header">&times;</button>
       </div>
       <div class="header-with-navigation">
-        <img src="./img/logoEC.png" class="logo" />
+        <img src="./img/logoEC.png" class="logo" alt="Equestrian Club Logo" />
         <nav class="header-with-navigatio--nav">
           <ul>
-            <li><a class="navigation-link" href="">HOME</a></li>
-            <li><a class="navigation-link" href="">FEATURES</a></li>
-            <li><a class="navigation-link" href="">SERVICES</a></li>
-            <li><a class="navigation-link" href="">EVENTS</a></li>
-            <li><a class="navigation-link" href="">ABOUT US</a></li>
-            <li><a class="navigation-link" href="">CONTACT</a></li>
+            <li><a href="#" class="navigation-link">Home</a></li>
+            <li><a href="#" class="navigation-link">Features</a></li>
+            <li><a href="#" class="navigation-link">Services</a></li>
+            <li><a href="#" class="navigation-link">Events</a></li>
+            <li><a href="#" class="navigation-link">About Us</a></li>
+            <li><a href="#" class="navigation-link">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
       <div class="horse-theme">
-        <h1 class="horse-theme--header">THE EQUESTRIAN THEME KALLYAS</h1>
+        <h1 class="horse-theme--header">The Equestrian Theme Kallyas</h1>
       </div>
       <div class="motto">
-        <p class="motto--text">BEST EQUESTRIAN SERVICES AROUND THE WORLD</p>
+        <p class="motto--text">Best Equestrian Services Around The World</p>
       </div>
       <section class="greeting">
         <div class="greeting--wrapper">
           <div class="greeting--header">
             <div class="header--left-lines">
-              <hr class="small-line" />
-              <hr class="mid-line" />
-              <hr class="small-line" />
+              <div class="small-line"></div>
+              <div class="mid-line"></div>
+              <div class="small-line"></div>
             </div>
-            <div class="greeting--header--text">WELCOME</div>
+            <h2 class="greeting--header--text">Welcome</h2>
             <div class="header--right-lines">
-              <hr class="small-line" />
-              <hr class="mid-line" />
-              <hr class="small-line" />
+              <div class="small-line"></div>
+              <div class="mid-line"></div>
+              <div class="small-line"></div>
             </div>
           </div>
           <p class="greeting--text grey">
@@ -73,7 +73,7 @@
             quae ab illo inventore veritatis et.
           </p>
           <div class="greeting--push-button-container">
-            <button class="greeting--button gold">READ MORE</button>
+            <a href="#" class="greeting--button gold">Read More</a>
             <hr class="greeting--line-with-button" />
           </div>
           <p class="greeting--text grey">
@@ -81,19 +81,19 @@
           </p>
         </div>
       </section>
-      <section class="more-information">
-        <div class="membership">
-          <h2 class="more-information--header gold">MEMBERSHIP</h2>
-          <p class="membership--text">
+      <div class="more-information">
+        <section class="Membership">
+          <h2 class="more-information--header gold">Membership</h2>
+          <p class="Membership--text">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem aperiam, Nemo enim
             ipsam voluptatem quia
           </p>
-          <button class="more-information--button">READ MORE</button>
-        </div>
-        <div class="newsletter">
-          <img src="./img/logoEC.png" class="logo" />
-          <h2 class="more-information--header gold">NEWSLETTER</h2>
+          <a href="#" class="more-information--button">Read More</a>
+        </section>
+        <section class="newsletter">
+          <img src="./img/logoEC.png" class="logo" alt="Equestrian Club Logo" />
+          <h2 class="more-information--header gold">Newsletter</h2>
           <p class="newsletter--text">Sing up for some news!</p>
           <div class="form-wrapper">
             <form class="email-form">
@@ -113,20 +113,20 @@
               </button>
             </form>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
       <section class="services">
         <div class="services--header">
           <div class="header--left-lines">
-            <hr class="small-line" />
-            <hr class="mid-line" />
-            <hr class="small-line" />
+            <div class="small-line"></div>
+            <div class="mid-line"></div>
+            <div class="small-line"></div>
           </div>
-          <div class="services--header--text">HORSE CLUB SERVICES</div>
+          <h2 class="services--header--text">Horse Club Services</h2>
           <div class="header--right-lines">
-            <hr class="small-line" />
-            <hr class="mid-line" />
-            <hr class="small-line" />
+            <div class="small-line"></div>
+            <div class="mid-line"></div>
+            <div class="small-line"></div>
           </div>
         </div>
         <div class="services--text gold">
@@ -141,29 +141,33 @@
           <img
             src="./img/services-photo-one.png"
             class="services--photos--img"
+            alt="Image Description"
           />
           <img
             src="./img/services-photo-two.png"
             class="services--photos--img"
+            alt="Image Description"
           />
           <img
             src="./img/services-photo-three.png"
             class="services--photos--img"
+            alt="Image Description"
           />
         </div>
       </section>
       <section class="price">
+        <h2 class="sr-only">Prices</h2>
         <div class="price--header">
           <div class="header--left-lines">
-            <hr class="small-line" />
-            <hr class="mid-line" />
-            <hr class="small-line" />
+            <div class="small-line"></div>
+            <div class="mid-line"></div>
+            <div class="small-line"></div>
           </div>
-          <img src="./img/logoEC.png" class="logo" />
+          <img src="./img/logoEC.png" class="logo" alt="Equestrian Club Logo" />
           <div class="header--right-lines">
-            <hr class="small-line" />
-            <hr class="mid-line" />
-            <hr class="small-line" />
+            <div class="small-line"></div>
+            <div class="mid-line"></div>
+            <div class="small-line"></div>
           </div>
         </div>
         <p class="price--text gold">
@@ -172,37 +176,34 @@
         </p>
         <div class="price--container">
           <div class="price--container--item">
-            <span class="price--container--item-name">BEGINNER</span>
+            <span class="price--container--item-name">Beginner</span>
             <span class="price--container--item-value">30$</span>
-            <hr class="price--container--item-line" />
             <p class="price--container--item-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna
               aliqua.ultrices gravida.
             </p>
-            <button class="more-information--button price--container--button">BOOK NOW</button>
+            <button type="button" class="more-information--button price--container--button">Book Now</button>
           </div>
           <div class="price--container--item">
-            <span class="price--container--item-name">INTERMEDIATE</span>
+            <span class="price--container--item-name">Intermediate</span>
             <span class="price--container--item-value">60$</span>
-            <hr class="price--container--item-line" />
             <p class="price--container--item-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna
               aliqua.ultrices gravida.
             </p>
-            <button class="more-information--button">BOOK NOW</button>
+            <button type="button" class="more-information--button">Book Now</button>
           </div>
           <div class="price--container--item">
-            <span class="price--container--item-name">PRIVATE</span>
+            <span class="price--container--item-name">Private</span>
             <span class="price--container--item-value">90$</span>
-            <hr class="price--container--item-line" />
             <p class="price--container--item-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna
               aliqua.ultrices gravida.
             </p>
-            <button class="more-information--button">BOOK NOW</button>
+            <button type="button" class="more-information--button">Book Now</button>
           </div>
         </div>
       </section>
@@ -214,63 +215,64 @@
               <hr class="mid-line" />
               <hr class="small-line" />
             </div>
-            <div class="news--header--text">LATEST NEWS</div>
+            <h2 class="news--header--text">Latest News</h2>
             <div class="header--right-lines">
               <hr class="small-line" />
               <hr class="mid-line" />
               <hr class="small-line" />
             </div>
           </div>
-          <h3 class="text-under-header gold">From our blog</h3>
+          <p class="text-under-header gold">From our blog</p>
           <div class="news--conteiner">
-            <div class="news--item">
+            <article class="news--item">
               <div class="news--item--date">24 Apr</div>
               <div class="news--item--box">
-                <h2 class="news--box--header gold">
-                  HOW TO INTRODUCE NEW HORSES TO YOUR HERD
-                </h2>
+                <h3 class="news--box--header gold">
+                  How To Introduce New Horses To Your Herd
+                </h3>
                 <p class="news--box--text grey">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-                <a href="" class="news--box--more">VIEV MORE</a>
+                <a href="#" class="news--box--more">View More</a>
               </div>
-            </div>
-            <div class="news--item">
+            </article>
+            <article class="news--item">
               <div class="news--item--date">24 Apr</div>
               <div class="news--item--box">
-                <h2 class="news--box--header gold">
-                  CHECK THE TOP 10 BEST EQUESTRIAN SERVICES
-                </h2>
+                <h3 class="news--box--header gold">
+                  Check The Top 10 Best Equestrian Services
+                </h3>
                 <p class="news--box--text grey">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-                <a href="" class="news--box--more">VIEV MORE</a>
+                <a href="#" class="news--box--more">View More</a>
               </div>
-            </div>
-            <div class="news--item">
+            </article>
+            <article class="news--item">
               <div class="news--item--date">08 Apr</div>
               <div class="news--item--box">
-                <h2 class="news--box--header gold">
-                  NEW GADGET TO MAKE YOUR WORK EASY
-                </h2>
+                <h3 class="news--box--header gold">
+                  New Gadget To Make Your Work Easy
+                </h3>
                 <p class="news--box--text grey">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-                <a href="" class="news--box--more">VIEV MORE</a>
+                <a href="#" class="news--box--more">View More</a>
               </div>
-            </div>
+            </article>
           </div>
         </div>
       </section>
       <div class="motto">
-        <p class="motto--text">WHAT OUR VISITORS SAY ABOUT US</p>
+        <p class="motto--text">What our visitors say about us</p>
       </div>
       <section class="feedback">
+        <h2 class="sr-only">Feedback</h2>
         <div class="feedback--container">
-          <img class="feedback--arrow" src="./img/feedback-left-arrow.svg" />
+          <img class="feedback--arrow" src="./img/feedback-left-arrow.svg" alt="Girl" />
           <div class="feedback-box">
             <img src="./img/feedback-foto-1.png" class="feedback--foto" />
             <p class="feedback--text">
@@ -289,14 +291,14 @@
         </ul>
       </section>
       <section class="gallery">
-        <img src="./img/gallery-foto-1.png" class="gallery--foto" />
-        <img src="./img/gallery-foto-2.png" class="gallery--foto" />
-        <img src="./img/gallery-foto-3.png" class="gallery--foto" />
-        <img src="./img/gallery-foto-4.png" class="gallery--foto" />
-        <img src="./img/gallery-foto-5.png" class="gallery--foto" />
+        <img src="./img/gallery-foto-1.png" class="gallery--foto" alt="Image description" />
+        <img src="./img/gallery-foto-2.png" class="gallery--foto" alt="Image description" />
+        <img src="./img/gallery-foto-3.png" class="gallery--foto" alt="Image description" />
+        <img src="./img/gallery-foto-4.png" class="gallery--foto" alt="Image description" />
+        <img src="./img/gallery-foto-5.png" class="gallery--foto" alt="Image description" />
       </section>
       <div class="motto">
-        <p class="motto--text">WHERE YOU CAN FIND US</p>
+        <p class="motto--text">Where can you find us</p>
       </div>
       <div class="map">
         <iframe
@@ -311,47 +313,43 @@
     </main>
     <footer class="footer">
       <div class="footer--wrapper">
-        <img src="./img/logoEC.png" class="logo">
-        <nav class="footer--navigation">
-          <ul>
-            <li><a href="" class="footer--navigation--link">Home</a></li>
-            <li><a href="" class="footer--navigation--link">Feature</a></li>
-            <li><a href="" class="footer--navigation--link">Services</a></li>
-            <li><a href="" class="footer--navigation--link">Events</a></li>
-            <li><a href="" class="footer--navigation--link">About us</a></li>
-          </ul>
-        </nav>
-        <nav class="footer--navigation">
-          <ul>
-            <li><a href="" class="footer--navigation--link">Horses</a></li>
-            <li><a href="" class="footer--navigation--link">Prices</a></li>
-            <li><a href="" class="footer--navigation--link">FaQ</a></li>
-            <li><a href="" class="footer--navigation--link">Blog</a></li>
-            <li><a href="" class="footer--navigation--link">Contact us</a></li>
-          </ul>
-        </nav>
+        <img src="./img/logoEC.png" class="logo" alt="Equestrian Club Logo">
+        <ul>
+          <li><a href="#" class="footer--navigation--link">Home</a></li>
+          <li><a href="#" class="footer--navigation--link">Feature</a></li>
+          <li><a href="#" class="footer--navigation--link">Services</a></li>
+          <li><a href="#" class="footer--navigation--link">Events</a></li>
+          <li><a href="#" class="footer--navigation--link">About us</a></li>
+        </ul>
+        <ul>
+          <li><a href="#" class="footer--navigation--link">Horses</a></li>
+          <li><a href="#" class="footer--navigation--link">Prices</a></li>
+          <li><a href="#" class="footer--navigation--link">FaQ</a></li>
+          <li><a href="#" class="footer--navigation--link">Blog</a></li>
+          <li><a href="#" class="footer--navigation--link">Contact us</a></li>
+        </ul>
         <div class="footer--social-networks">
           <span class="footer--social-networks--text">Follow us on</span>
           <div>
-            <a href=""><img src="./img/twitter-icon.png" class="footer--social-networks--icon"></a>
-            <a href=""><img src="./img/fb-icon.png" class="footer--social-networks--icon"></a>
-            <a href=""><img src="./img/pinterest-icon.png" class="footer--social-networks--icon"></a>
-            <a href=""><img src="./img/inst-icon.png" class="footer--social-networks--icon"></a>
+            <a href="#"><img src="./img/twitter-icon.png" class="footer--social-networks--icon"><span class="sr-only">Twitter</span></a>
+            <a href="#"><img src="./img/fb-icon.png" class="footer--social-networks--icon"><span class="sr-only">Facebook</span></a>
+            <a href="#"><img src="./img/pinterest-icon.png" class="footer--social-networks--icon"><span class="sr-only">Pinterest</span></a>
+            <a href="#"><img src="./img/inst-icon.png" class="footer--social-networks--icon"><span class="sr-only">Instagram</span></a>
           </div>
         </div>
         <div class="footer--subscribe">
           <span class="footer--subscribe--text">Subscribe to our newsletter</span>
-          <div class="footer--subscribe--form">
+          <form method="POST" action="/" class="footer--subscribe--form">
             <input
                 type="email"
-                class="footer--input"
-                name="email-form"
+                name="email"
                 placeholder=" your@email.com"
                 required
+                class="footer--input"
               />
-              <button type="submit" form="email-form" class="footer--button">SEND</button>
+              <button type="submit" class="footer--button">Send</button>
           </div>
-        </div>
+        </form>
       </div>
     </footer>
     </div>
