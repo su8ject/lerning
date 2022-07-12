@@ -24,6 +24,7 @@
 
 .news--header--text {
   text-align: center;
+  text-transform: uppercase;
   font-size: var(--size-header);
 }
 
@@ -68,6 +69,7 @@
 .news--box--header {
   font-size: var(--size-header);
   text-align: center;
+  text-transform: uppercase;
 }
 
 .news--box--text {
@@ -78,6 +80,7 @@
 
 .news--box--more {
   text-decoration: underline;
+  text-transform: uppercase;
   font-size: 12px;
   color: black;
   font-weight: bold;

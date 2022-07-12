@@ -69,6 +69,8 @@
 .header--social-networks--cross {
   position: absolute;
   right: 20px;
+  border-width: 0;
+  background-color: transparent;
   font-size: 30px;
   color: #646464;
 }
@@ -106,4 +108,5 @@ header .logo {
 .navigation-link {
   color: #b89f5c;
   font-size: 17px;
+  text-transform: uppercase;
 }

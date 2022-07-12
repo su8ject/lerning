@@ -14,6 +14,7 @@
 
 .services--header--text {
   text-align: center;
+  text-transform: uppercase;
   font-size: var(--size-header);
 }
 

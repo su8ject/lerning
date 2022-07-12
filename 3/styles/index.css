@@ -1,3 +1,4 @@
+@import url('./utilities.css');
 @import url(header.css);
 @import url(reset.css);
 @import url(greeting.css);
@@ -11,7 +12,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
 
-* {
+html {
   font-family: "Lora", serif;
 }
 
@@ -51,6 +52,7 @@
   color: white;
   font-size: 70px;
   text-align: center;
+  text-transform: uppercase;
   font-weight: normal;
   max-width: 1000px;
 }
@@ -68,6 +70,7 @@
 
 .motto--text {
   text-align: center;
+  text-transform: uppercase;
 }
 
 .header--right-lines,
