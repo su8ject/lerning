@@ -1,0 +1,16 @@
+.footer {
+  background: #3f2414;
+}
+
+.footer--wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.footer--inst-icon {
+    height: 30px;
+    object-fit: contain;
+}
