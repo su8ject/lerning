@@ -36,3 +36,11 @@
   color: white;
   font-size: var(--size-text);
 }
+
+.header--navigation--link:hover {
+  color: var(----active-link-color);
+}
+
+.phone:hover {
+  opacity: 0.6;
+}
