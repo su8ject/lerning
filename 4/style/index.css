@@ -21,6 +21,10 @@ html {
   height: 50px;
 }
 
+a .logo--img:hover {
+  opacity: 0.6;
+}
+
 .active-link {
   color: var(--active-link-color);
   text-decoration: none;
