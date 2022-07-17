@@ -8,18 +8,27 @@
 
 :root {
   --active-link-color: #3f2414;
+  --size-header: 40px;
+  --size-text: 18px;
+  --primary-color: #d5a53c;
 }
 
 html {
   font-family: "Lora", serif;
 }
 
+.logo--img {
+  height: 50px;
+}
+
 .active-link {
   color: var(--active-link-color);
+  text-decoration: none;
 }
 
 .bg {
-  background: #FFFBF0;
+  min-height: calc(100vh - 100px);
+  background: #fffbf0;
   padding: 20px;
 }
 
@@ -32,15 +41,23 @@ html {
 }
 
 .primary-header {
-  color: black;
-  font-size: 50px;
-  margin: 20px;
+  font-size: var(--size-header);
+  margin-top: 40px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
 .primary-text {
   max-width: 800px;
-  font-size: 18px;
+  font-size: var(--size-text);
   line-height: 25px;
   text-align: justify;
+}
+
+.none-decoration {
+  text-decoration: none;
+}
+
+.text-bold {
+  font-weight: bold;
 }

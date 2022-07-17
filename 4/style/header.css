@@ -1,41 +1,38 @@
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 10px 20px;
-    background: url(../img/background/header-bg.jpg) center no-repeat;
-    background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  background: url(../img/header-bg.jpg) center no-repeat;
+  background-size: cover;
 }
 
 .header--logo {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    height: 50px;
-}
-
-.header--logo--img {
-    height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  height: 50px;
 }
 
 .header--logo-text {
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-    color: white;
-    font-size: 30px;
-    border-left: 1px solid white;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  color: white;
+  font-size: 30px;
+  border-left: 1px solid white;
 }
 
 .header--navigation {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 10px 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px 20px;
 }
 
-.header--navigation--link, .header--phone{
-    color: white;
-    font-size: 18px;
+.header--navigation--link,
+.phone {
+  color: white;
+  font-size: var(--size-text);
 }
