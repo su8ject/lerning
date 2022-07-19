@@ -1,0 +1,85 @@
+@import url(../style/header.css);
+@import url(../style/reset.css);
+@import url(../style/main.css);
+@import url(../style/footer.css);
+@import url(../style/products.css);
+
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
+:root {
+  --active-link-color: #3f2414;
+  --size-header: 40px;
+  --size-text: 18px;
+  --primary-color: #d5a53c;
+}
+
+html {
+  font-family: "Lora", serif;
+}
+
+a {
+  transition: 0.6s;
+}
+
+.logo--img {
+  height: 50px;
+}
+
+a .logo--img:hover {
+  opacity: 0.6;
+}
+
+.active-link {
+  color: var(--active-link-color);
+  text-decoration: none;
+}
+
+.bg {
+  min-height: calc(100vh - 120px);
+  background: #fffbf0;
+  padding: 20px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.primary-header {
+  font-size: var(--size-header);
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.primary-text {
+  max-width: 800px;
+  font-size: var(--size-text);
+  line-height: 25px;
+  text-align: justify;
+}
+
+.none-decoration {
+  text-decoration: none;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --size-header: 30px;
+    --size-text: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  :root {
+    --size-header: 20px;
+    --size-text: 14px;
+  }
+}
