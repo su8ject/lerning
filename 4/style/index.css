@@ -17,6 +17,10 @@ html {
   font-family: "Lora", serif;
 }
 
+a {
+  transition: 0.6s;
+}
+
 .logo--img {
   height: 50px;
 }
@@ -31,7 +35,7 @@ a .logo--img:hover {
 }
 
 .bg {
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 120px);
   background: #fffbf0;
   padding: 20px;
 }
@@ -64,4 +68,18 @@ a .logo--img:hover {
 
 .text-bold {
   font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --size-header: 30px;
+    --size-text: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  :root {
+    --size-header: 20px;
+    --size-text: 14px;
+  }
 }
