@@ -10,6 +10,11 @@
   </head>
   <body>
     <header class="header">
+      <div class="hambl">
+        <span class="hambl-line"></span>
+        <span class="hambl-line"></span>
+        <span class="hambl-line"></span>
+      </div>
       <div class="header--logo">
         <a href="./index.html"><img src="./img/icon/MykolaHoney-icon.svg" alt="MykolaHoney" class="logo--img"></object></a>
         <span class="header--logo-text">MykolaHoney</span>
@@ -35,6 +40,26 @@
       <a href="tel:+380989656054" class="phone none-decoration">+ 380 (98) 965 60 54</a>
     </header>
     <main class="bg">
+      <section class="mobile-menu">
+        <ul class="mobile-navigation">
+        <li>
+          <a class="mobile-link" href="./index.html">Головна</a>
+        </li>
+        <li>
+          <a class="mobile-link active-link" href="#">Продукти пасічництва</a>
+        </li>
+        <li>
+          <a class="mobile-link" href="./products-remanent.html">Реманент для пасіки</a>
+        </li>
+        <li>
+          <a class="mobile-link" href="./delivery.html">Доставка та оплата</a>
+        </li>
+      </ul>
+      </section>
+      <div class="theme-buttons">
+        <button type="button" class="main-theme-button"></button>
+        <button type="button" class="additional-theme-button"></button>
+      </div>
       <section>
         <div class="wrapper">
           <h1 class="main--header">Про мене</h1>
@@ -120,6 +145,16 @@
           </div>
         </div>
       </section>
+      <section class="walk">
+        <h2 class="primary-header">Фото моєї пасіки</h2>
+        <div class="foto">
+          <img src="./img/apiary/apiary-1.jpg" class="foto--img">
+          <img src="./img/apiary/apiary-2.jpg" class="foto--img">
+          <img src="./img/apiary/apiary-3.jpg" class="foto--img">
+          <img src="./img/apiary/apiary-4.jpg" class="foto--img">
+          <img src="./img/apiary/apiary-5.jpg" class="foto--img">
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="footer--wrapper">
@@ -137,5 +172,10 @@
         </a>
       </div>
     </footer>
+    <script src="./js/index.js"></script>
+    <script src="./js/theme.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/weather.js"></script>
   </body>
 </html>
