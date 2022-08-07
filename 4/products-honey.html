@@ -10,6 +10,11 @@
   </head>
   <body>
     <header class="header">
+      <div class="hambl">
+        <span class="hambl-line"></span>
+        <span class="hambl-line"></span>
+        <span class="hambl-line"></span>
+      </div>
       <div class="header--logo">
         <a href="./index.html"><img src="./img/icon/MykolaHoney-icon.svg" alt="MykolaHoney" class="logo--img"></object></a>
         <span class="header--logo-text">MykolaHoney</span>
@@ -20,9 +25,7 @@
             <a class="header--navigation--link" href="./index.html">Головна</a>
           </li>
           <li>
-            <a class="header--navigation--link active-link" href="#"
-              >Продукти пасічництва</a
-            >
+            <a class="header--navigation--link active-link" href="#">Продукти пасічництва</a>
           </li>
           <li>
             <a class="header--navigation--link" href="./products-remanent.html">Реманент для пасіки</a>
@@ -35,10 +38,33 @@
       <a href="tel:+380989656054" class="phone none-decoration">+ 380 (98) 965 60 54</a>
     </header>
     <main class="bg">
+      <section class="mobile-menu">
+        <ul class="mobile-navigation">
+        <li>
+          <a class="mobile-link" href="./index.html">Головна</a>
+        </li>
+        <li>
+          <a class="mobile-link active-link" href="#">Продукти пасічництва</a>
+        </li>
+        <li>
+          <a class="mobile-link" href="./products-remanent.html">Реманент для пасіки</a>
+        </li>
+        <li>
+          <a class="mobile-link" href="./delivery.html">Доставка та оплата</a>
+        </li>
+      </ul>
+      </section>
+      <div class="theme-buttons">
+        <button type="button" class="main-theme-button"></button>
+        <button type="button" class="additional-theme-button"></button>
+      </div>
       <section>
         <h1 class="primary-header">Продукти пасічництва</h1>
         <div class="galery">
           <div class="products-card">
+            <svg class="favourite-mark">
+              <use xlink:href="./img/sprite.svg#favourite-mark"></use>
+            </svg>
             <img src="./img/products/honey-0.5l.jpg" class="card--img" />
             <div class="card-name">
               <span class="card-name--text">Мед травневий 0.5л</span>
@@ -46,6 +72,9 @@
             </div>
           </div>
           <div class="products-card">
+            <svg class="favourite-mark">
+              <use xlink:href="./img/sprite.svg#favourite-mark"></use>
+            </svg>
             <img src="./img/products/honey-1l.jpg" class="card--img" />
             <div class="card-name">
               <span class="card-name--text">Мед травневий 1л</span>
@@ -53,6 +82,9 @@
             </div>
           </div>
           <div class="products-card">
+            <svg class="favourite-mark">
+              <use xlink:href="./img/sprite.svg#favourite-mark"></use>
+            </svg>
             <img src="./img/products/honey-3l.jpg" class="card--img" />
             <div class="card-name">
               <span class="card-name--text">Мед травневий 3л</span>
@@ -60,6 +92,9 @@
             </div>
           </div>
           <div class="products-card sold">
+            <svg class="favourite-mark">
+              <use xlink:href="./img/sprite.svg#favourite-mark"></use>
+            </svg>
             <img src="./img/products/honey.jpg" class="card--img" />
             <div class="card-name">
               <span class="card-name--text">Мед осінній 1л</span>
@@ -67,6 +102,9 @@
             </div>
           </div>
           <div class="products-card">
+            <svg class="favourite-mark">
+              <use xlink:href="./img/sprite.svg#favourite-mark"></use>
+            </svg>
             <img src="./img/products/perga.png" class="card--img" />
             <div class="card-name">
               <span class="card-name--text">Перга 1л</span>
@@ -74,6 +112,9 @@
             </div>
           </div>
           <div class="products-card">
+            <svg class="favourite-mark">
+              <use xlink:href="./img/sprite.svg#favourite-mark"></use>
+            </svg>
             <img src="./img/products/honey-1.png" class="card--img" />
             <div class="card-name">
               <span class="card-name--text">Забрус 1л</span>
@@ -81,6 +122,9 @@
             </div>
           </div>
           <div class="products-card sold">
+            <svg class="favourite-mark">
+              <use xlink:href="./img/sprite.svg#favourite-mark"></use>
+            </svg>
             <img src="./img/products/honey-1.png" class="card--img" />
             <div class="card-name">
               <span class="card-name--text">Пилок 1л</span>
@@ -106,5 +150,26 @@
         </a>
       </div>
     </footer>
+    <section class="popup">
+      <div class="popup--body">
+        <div class="popup--content">
+          <div class="popup--header">
+            <span class="card-name--text  popup--text"></span>
+            <button type="button" class="popup--cross">&times;</button>
+          </div>
+          <img src="./img/products/honey-0.5l.jpg" class="card--img">
+          <div class="popup--buttons">
+            <a href="./delivery.html" class="popup--order">Замовити</a>
+            <button type="button" class="popup--close">Закрити</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./js/index.js"></script>
+    <script src="./js/theme.js"></script>
+    <script src="./js/popup.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/favourite.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>
