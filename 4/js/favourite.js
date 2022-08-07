@@ -1,8 +1,6 @@
 const product = document.querySelectorAll(".products-card");
 const favouriteMark = document.querySelectorAll(".favourite-mark");
 
-onload = (event) => {};
-
 const showMark = (name) => {
   name.children[0].classList.add("block");
 };
