@@ -1,0 +1,20 @@
+.foto {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.foto--img {
+  width: 150px;
+  height: 100px;
+}
+
+.foto--img.active {
+  width: 600px;
+  height: 400px;
+}
+
+#thumbs {
+  display: flex;
+}

@@ -1,4 +1,3 @@
-const slider = document.querySelector("body");
 let startPoint;
 let moved = false;
 function touch(e) {
@@ -10,7 +9,7 @@ function move(e) {
     return;
   }
   e.preventDefault();
-  if (e.changedTouches[0].pageX > startPoint + slider.offsetWidth / 4) {
+  if (e.changedTouches[0].pageX > startPoint + document.body.offsetWidth / 4) {
     if (
       window.location.href ===
       "http://" + window.location.host + "/4/index.html"
@@ -37,7 +36,7 @@ function move(e) {
     }
     moved = true;
   }
-  if (e.changedTouches[0].pageX < startPoint - slider.offsetWidth / 4) {
+  if (e.changedTouches[0].pageX < startPoint - document.body.offsetWidth / 4) {
     if (
       window.location.href ===
       "http://" + window.location.host + "/4/index.html"
@@ -65,9 +64,9 @@ function move(e) {
     moved = true;
   }
 }
-slider.addEventListener("touchmove", move);
-slider.addEventListener("touchstart", touch);
-slider.addEventListener("touchend", () => {
+document.addEventListener("touchmove", move, { passive: false });
+document.addEventListener("touchstart", touch, { passive: false });
+document.addEventListener("touchend", () => {
   setTimeout(() => {
     moved = !moved;
   }, 200);
