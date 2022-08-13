@@ -5,6 +5,7 @@
 @import url(../style/products.css);
 @import url(../style/popup.css);
 @import url(../style/mobile-menu.css);
+@import url(../style/galery.css);
 
 @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
 
@@ -21,7 +22,7 @@ html {
   font-family: "Lora", serif;
 }
 
-a {
+a:hover {
   transition: 0.6s;
 }
 
@@ -42,9 +43,30 @@ a .logo--img:hover {
   min-height: calc(100vh - 120px);
   background: var(--bg-color);
   padding: 20px;
+  padding-top: 0;
+}
+
+.active-panel {
+  display: flex;
+  justify-content: space-between;
+}
+
+.notification {
+  text-align: center;
+  width: 150px;
+  height: 0;
+  color: var(--color-text);
+  font-size: var(--size-text);
+  transition: 0.2s;
+}
+
+.notification.active {
+  background: var(--primary-color);
+  height: 30px;
 }
 
 .theme-buttons {
+  padding-top: 20px;
   display: flex;
   justify-content: end;
   gap: 10px;
@@ -117,18 +139,6 @@ a .logo--img:hover {
   font-size: 14px;
 }
 
-.foto {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.foto--img {
-  width: 20%;
-  min-width: 120px;
-  flex-grow: 1;
-}
-
 @media screen and (max-width: 768px) {
   :root {
     --size-header: 30px;
@@ -136,7 +146,7 @@ a .logo--img:hover {
   }
 
   .bg {
-    padding-top: 90px;
+    padding-top: 70px;
     min-height: calc(100vh - 50px);
   }
 }
