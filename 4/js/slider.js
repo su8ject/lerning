@@ -1,73 +1,73 @@
-let startPoint;
-let moved = false;
-function touch(e) {
-  e.preventDefault();
-  startPoint = e.changedTouches[0].pageX;
+document.addEventListener("touchstart", handleTouchStart, false);
+document.addEventListener("touchmove", handleTouchMove, false);
+
+let xDown = null;
+
+function handleTouchStart(evt) {
+  xDown = evt.touches[0].clientX;
 }
-function move(e) {
-  if (moved) {
+
+function handleTouchMove(evt) {
+  if (!xDown) {
     return;
   }
-  e.preventDefault();
-  if (e.changedTouches[0].pageX > startPoint + document.body.offsetWidth / 4) {
-    if (
-      window.location.href ===
-      "http://" + window.location.host + "/4/index.html"
-    ) {
-      window.location.href = "./delivery.html";
+
+  let xUp = evt.touches[0].clientX;
+
+  let xDiff = xDown - xUp;
+
+  if (Math.abs(xDiff)) {
+    if (xDiff > 0) {
+      if (
+        window.location.href ===
+        "http://" + window.location.host + "/4/index.html"
+      ) {
+        window.location.href = "./products-honey.html";
+      }
+      if (
+        window.location.href ===
+        "http://" + window.location.host + "/4/delivery.html"
+      ) {
+        window.location.href = "./index.html";
+      }
+      if (
+        window.location.href ===
+        "http://" + window.location.host + "/4/products-remanent.html"
+      ) {
+        window.location.href = "./delivery.html";
+      }
+      if (
+        window.location.href ===
+        "http://" + window.location.host + "/4/products-honey.html"
+      ) {
+        window.location.href = "./products-remanent.html";
+      }
+    } else {
+      if (
+        window.location.href ===
+        "http://" + window.location.host + "/4/index.html"
+      ) {
+        window.location.href = "./delivery.html";
+      }
+      if (
+        window.location.href ===
+        "http://" + window.location.host + "/4/delivery.html"
+      ) {
+        window.location.href = "./products-remanent.html";
+      }
+      if (
+        window.location.href ===
+        "http://" + window.location.host + "/4/products-remanent.html"
+      ) {
+        window.location.href = "./products-honey.html";
+      }
+      if (
+        window.location.href ===
+        "http://" + window.location.host + "/4/products-honey.html"
+      ) {
+        window.location.href = "./index.html";
+      }
     }
-    if (
-      window.location.href ===
-      "http://" + window.location.host + "/4/delivery.html"
-    ) {
-      window.location.href = "./products-remanent.html";
-    }
-    if (
-      window.location.href ===
-      "http://" + window.location.host + "/4/products-remanent.html"
-    ) {
-      window.location.href = "./products-honey.html";
-    }
-    if (
-      window.location.href ===
-      "http://" + window.location.host + "/4/products-honey.html"
-    ) {
-      window.location.href = "./index.html";
-    }
-    moved = true;
   }
-  if (e.changedTouches[0].pageX < startPoint - document.body.offsetWidth / 4) {
-    if (
-      window.location.href ===
-      "http://" + window.location.host + "/4/index.html"
-    ) {
-      window.location.href = "./products-honey.html";
-    }
-    if (
-      window.location.href ===
-      "http://" + window.location.host + "/4/delivery.html"
-    ) {
-      window.location.href = "./index.html";
-    }
-    if (
-      window.location.href ===
-      "http://" + window.location.host + "/4/products-remanent.html"
-    ) {
-      window.location.href = "./delivery.html";
-    }
-    if (
-      window.location.href ===
-      "http://" + window.location.host + "/4/products-honey.html"
-    ) {
-      window.location.href = "./products-remanent.html";
-    }
-    moved = true;
-  }
+  xDown = null;
 }
-document.addEventListener("touchmove", move, { passive: false });
-document.addEventListener("touchstart", touch, { passive: false });
-document.addEventListener("touchend", () => {
-  setTimeout(() => {
-    moved = !moved;
-  }, 200);
-});
