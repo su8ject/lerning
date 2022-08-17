@@ -1,4 +1,4 @@
-const product = document.querySelectorAll(".products-card");
+const product = document.querySelector(".galery");
 const favouriteMark = document.querySelectorAll(".favourite-mark");
 let favouriteName = [];
 
@@ -28,23 +28,34 @@ const handlerMark = (name) => {
   localStorage.setItem("favouriteName", JSON.stringify(favouriteName));
 };
 
-for (item of product) {
-  item.addEventListener("mousemove", (event) => {
+product.addEventListener("mousemove", (event) => {
+  if (
+    event.target.className === "products-card" ||
+    event.target.className === "card-name--text" ||
+    event.target.className === "card-name--price" ||
+    event.target.className === "card--img" ||
+    event.target.tagName === "svg"
+  ) {
     let mark = event.target.closest(".products-card");
     showMark(mark);
-  });
-}
+  }
+});
 
-for (item of product) {
-  item.addEventListener("mouseout", (event) => {
+product.addEventListener("mouseout", (event) => {
+  if (
+    event.target.className === "products-card" ||
+    event.target.className === "card-name--text" ||
+    event.target.className === "card-name--price" ||
+    event.target.className === "card--img"
+  ) {
     let mark = event.target.closest(".products-card");
     hideMark(mark);
-  });
-}
+  }
+});
 
-for (item of favouriteMark) {
-  item.addEventListener("click", (event) => {
+product.addEventListener("click", (event) => {
+  if (event.target.tagName === "svg" || event.target.tagName === "use") {
     let mark = event.target.closest(".products-card");
     handlerMark(mark);
-  });
-}
+  }
+});

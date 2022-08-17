@@ -6,25 +6,13 @@ const takeAway = () => {
   notification.classList.remove("active");
 };
 
+
 window.onload = () => {
   if (localStorage.getItem("theme") === "additional") {
     document.documentElement.style.setProperty("--bg-color", "#e78f63");
     document.documentElement.style.setProperty("--primary-color", "#ad4a2b");
     document.documentElement.style.setProperty("--color-text", "#fffee9");
     footer.style.background = "#3d3e3b";
-  }
-
-  let productName = JSON.parse(localStorage.getItem("favouriteName"));
-  if (JSON.parse(localStorage.getItem("favouriteName"))) {
-    for (item of productName) {
-      for (nameCard of cardNameText) {
-        if (item === nameCard.innerHTML) {
-          nameCard
-            .closest(".products-card")
-            .children[0].classList.add("temp", "block");
-        }
-      }
-    }
   }
 };
 
