@@ -1,25 +1,34 @@
-fetch("https://queenlyrain.backendless.app/api/data/tools")
-  .then((response) => response.json())
-  .then((result) => {
-    const galery = document.querySelector(".galery");
+const baseUrl = "https://queenlyrain.backendless.app/api/data";
 
-    for (let key in result) {
-      let favourite = JSON.parse(
-        localStorage.getItem("favouriteName").includes(result[key].name)
-      )
-        ? "temp block"
-        : "";
-      let sold = !result[key].availability ? "sold" : "";
-      galery.innerHTML += `
-      <div class="products-card ${sold}">
-        <svg class="favourite-mark ${favourite}">
+const getIsFavourite = (key) =>
+  JSON.parse(localStorage.getItem("favouriteName").includes(key));
+
+const createCard = (item) => {
+  const isFavourite = getIsFavourite(item.name);
+  const isAvailable = item.availability;
+
+  return `<div class="products-card ${isAvailable ? "" : "sold"}">
+        <svg class="favourite-mark ${isFavourite ? "temp block" : ""}">
           <use xlink:href="./img/sprite.svg#favourite-mark"></use>
         </svg>
-        <div><img src="./img/products/${result[key].name}.jpg" class="card--img" /></div>
+      <div><img src="./img/products/${item.name}.jpg" class="card--img" /></div>
         <div class="card-name">
-          <span class="card-name--text">${result[key].name}</span>
-          <span class="card-name--price">${result[key].price}грн</span>
+          <span class="card-name--text">${item.name}</span>
+          <span class="card-name--price">${item.price}грн</span>
         </div>
       </div>`;
-    }
-  });
+};
+
+try {
+  fetch(`${baseUrl}/tools`)
+    .then((response) => response.json())
+    .then((result) => {
+      const gallery = document.querySelector(".galery"); // getElementById
+
+      const gallaryCards = result.map((item) => createCard(item));
+
+      gallery.innerHTML = gallaryCards.join("\n");
+    });
+} catch (e) {
+  console.log(`Error: ${e.code} --- ${e.message}`);
+}
