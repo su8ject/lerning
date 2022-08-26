@@ -21,11 +21,6 @@
 
 html {
   font-family: "Lora", serif;
-  overflow: hidden;
-}
-
-html.active {
-  overflow: visible;
 }
 
 a:hover {
