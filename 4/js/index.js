@@ -5,7 +5,8 @@ const takeAway = () => {
   notification.innerHTML = "";
   notification.classList.remove("active");
 };
-
+const body = document.querySelector("body");
+const mask = document.querySelector(".mask");
 
 window.onload = () => {
   if (localStorage.getItem("theme") === "additional") {

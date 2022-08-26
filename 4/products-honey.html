@@ -38,6 +38,9 @@
       <a href="tel:+380989656054" class="phone none-decoration">+ 380 (98) 965 60 54</a>
     </header>
     <main class="bg">
+      <div class="mask">
+        <div class="loader"></div>
+      </div>
       <section class="mobile-menu">
         <ul class="mobile-navigation">
         <li>
@@ -63,7 +66,7 @@
       </div>
       <section>
         <h1 class="primary-header">Продукти пасічництва</h1>
-        <div class="galery">
+        <div id="gallery">
         </div>
       </section>
     </main>
@@ -91,6 +94,7 @@
             <button type="button" class="popup--cross">&times;</button>
           </div>
           <div class="popup--img"></div>
+          <div class="popup--description"></div>
           <div class="popup--buttons">
             <a href="./delivery.html" class="popup--order">Замовити</a>
             <button type="button" class="popup--close">Закрити</button>
@@ -99,6 +103,7 @@
       </div>
     </section>
     <script src="./js/index.js"></script>
+    <script src="./js/createCard.js"></script>
     <script src="./js/honey.js"></script>
     <script src="./js/theme.js"></script>
     <script src="./js/popup.js"></script>

@@ -1,4 +1,4 @@
-const product = document.querySelector(".galery");
+const product = document.getElementById("gallery");
 const favouriteMark = document.querySelectorAll(".favourite-mark");
 let favouriteName = [];
 

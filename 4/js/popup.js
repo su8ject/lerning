@@ -3,9 +3,10 @@ const popupBody = document.querySelector(".popup--body");
 const popup = document.querySelector(".popup");
 const popupText = document.querySelector(".popup--text");
 const popupImg = document.querySelector(".popup--img");
-const galery2 = document.querySelector(".galery");
+const gallery = document.getElementById("gallery");
+const popupDescription = document.querySelector(".popup--description");
 
-galery2.addEventListener("click", (event) => {
+gallery.addEventListener("click", (event) => {
   if (
     event.target.className === "products-card" ||
     event.target.className === "card-name--text" ||
@@ -15,8 +16,10 @@ galery2.addEventListener("click", (event) => {
     popup.classList.add("open");
     document.body.style.overflow = "hidden";
     let card = event.target.closest(".products-card");
-    popupText.innerHTML = card.children[2].children[0].innerHTML;
+    let cardName = card.children[2].children[0].innerHTML;
+    popupText.innerHTML = cardName;
     popupImg.innerHTML = card.children[1].innerHTML;
+    popupDescription.innerHTML = nameItems[cardName];
   }
 });
 
