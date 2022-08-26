@@ -33,6 +33,12 @@
   margin-bottom: 10px;
 }
 
+.popup--description {
+  width: 225px;
+  font-size: var(--primary-color);
+  color: var(--color-text);
+}
+
 .popup--cross {
   font-size: var(--size-text);
   background: none;
