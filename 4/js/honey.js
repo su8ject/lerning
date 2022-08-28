@@ -11,8 +11,8 @@ try {
       gallery.innerHTML = gallaryCards.join("\n");
     })
     .then(() => {
-      const mask = document.querySelector(".mask");
-      mask.remove();
+      const loader = document.querySelector(".loader");
+      loader.remove();
     });
 } catch (e) {
   gallery.innerHTML = createError();

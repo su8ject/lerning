@@ -1,17 +1,7 @@
-.mask {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 100%;
-  min-height: 100vh;
-  background: var(--bg-color);
-  position: relative;
-  top: 0;
-  z-index: 100;
-  transition: 0.6s;
-}
-
 .loader {
+  position: absolute;
+  top: 50vh;
+  left: 50%;
   width: 100px;
   height: 100px;
   border: 8px solid var(--bg-color);
@@ -21,8 +11,7 @@
 }
 
 @keyframes loader {
-    100% {
-        transform: rotate(360deg);
-    }
+  100% {
+    transform: rotate(360deg);
+  }
 }
-
