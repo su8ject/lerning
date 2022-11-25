@@ -10,6 +10,11 @@
   </head>
   <body>
     <header class="header">
+      <div class="hambl">
+        <span class="hambl-line"></span>
+        <span class="hambl-line"></span>
+        <span class="hambl-line"></span>
+      </div>
       <div class="header--logo">
         <a href="./index.html"><img src="./img/icon/MykolaHoney-icon.svg" alt="MykolaHoney" class="logo--img"></object></a>
         <span class="header--logo-text">MykolaHoney</span>
@@ -35,6 +40,29 @@
       <a href="tel:+380989656054" class="phone none-decoration">+ 380 (98) 965 60 54</a>
     </header>
     <main class="bg">
+      <section class="mobile-menu">
+        <ul class="mobile-navigation">
+        <li>
+          <a class="mobile-link active-link" href="./index.html">Головна</a>
+        </li>
+        <li>
+          <a class="mobile-link" href="./products-honey.html">Продукти пасічництва</a>
+        </li>
+        <li>
+          <a class="mobile-link" href="./products-remanent.html">Реманент для пасіки</a>
+        </li>
+        <li>
+          <a class="mobile-link" href="./delivery.html">Доставка та оплата</a>
+        </li>
+      </ul>
+      </section>
+      <div class="active-panel">
+        <div class="notification"></div>
+        <div class="theme-buttons">
+          <button type="button" class="main-theme-button"></button>
+          <button type="button" class="additional-theme-button"></button>
+        </div>
+      </div>
       <section>
         <div class="wrapper">
           <h1 class="main--header">Про мене</h1>
@@ -120,6 +148,29 @@
           </div>
         </div>
       </section>
+      <section class="walk">
+        <h2 class="primary-header">Фото моєї пасіки</h2>
+        <div class="foto">
+          <p><img class="foto--img active" id="largeImg" src="./img/apiary/apiary-1.jpg" alt="Large image"></p>
+          <ul id="thumbs">
+            <li>
+              <a href="./img/apiary/apiary-1.jpg" title="Image 2"><img class="foto--img" src="./img/apiary/apiary-1.jpg"></a>
+            </li>
+            <li>
+              <a href="./img/apiary/apiary-2.jpg" title="Image 3"><img class="foto--img" src="./img/apiary/apiary-2.jpg"></a>
+            </li>
+            <li>
+              <a href="./img/apiary/apiary-3.jpg" title="Image 4"><img class="foto--img" src="./img/apiary/apiary-3.jpg"></a>
+            </li>
+            <li>
+              <a href="./img/apiary/apiary-4.jpg" title="Image 5"><img class="foto--img" src="./img/apiary/apiary-4.jpg"></a>
+            </li>
+            <li>
+              <a href="./img/apiary/apiary-5.jpg" title="Image 6"><img class="foto--img" src="./img/apiary/apiary-5.jpg"></a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="footer--wrapper">
@@ -137,5 +188,11 @@
         </a>
       </div>
     </footer>
+    <script src="./js/index.js"></script>
+    <script src="./js/theme.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/weather.js"></script>
+    <script src="./js/gallery.js"></script>
   </body>
 </html>

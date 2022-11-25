@@ -10,6 +10,11 @@
   </head>
   <body>
     <header class="header">
+      <div class="hambl">
+        <span class="hambl-line"></span>
+        <span class="hambl-line"></span>
+        <span class="hambl-line"></span>
+      </div>
       <div class="header--logo">
         <a href="./index.html"><img src="./img/icon/MykolaHoney-icon.svg" alt="MykolaHoney" class="logo--img"></object></a>
         <span class="header--logo-text">MykolaHoney</span>
@@ -35,65 +40,33 @@
       <a href="tel:+380989656054" class="phone none-decoration">+ 380 (98) 965 60 54</a>
     </header>
     <main class="bg">
-      <section>
+      <section class="mobile-menu">
+        <ul class="mobile-navigation">
+        <li>
+          <a class="mobile-link" href="./index.html">Головна</a>
+        </li>
+        <li>
+          <a class="mobile-link" href="./products-honey.html">Продукти пасічництва</a>
+        </li>
+        <li>
+          <a class="mobile-link active-link G" href="./products-remanent.html">Реманент для пасіки</a>
+        </li>
+        <li>
+          <a class="mobile-link" href="./delivery.html">Доставка та оплата</a>
+        </li>
+      </ul>
+      </section>
+      <div class="active-panel">
+        <div class="notification"></div>
+        <div class="theme-buttons">
+          <button type="button" class="main-theme-button"></button>
+          <button type="button" class="additional-theme-button"></button>
+        </div>
+      </div>
+      <section>    
         <h1 class="primary-header">Реманент для пасіки</h1>
-        <div class="galery">
-          <div class="products-card">
-            <img src="./img/products/frame.jpg" class="card--img" />
-            <div class="card-name">
-              <span class="card-name--text">Рамка (145)</span>
-              <span class="card-name--price">230 грн</span>
-            </div>
-          </div>
-          <div class="products-card">
-            <img src="./img/products/frame.jpg" class="card--img" />
-            <div class="card-name">
-              <span class="card-name--text">Рамка (230)</span>
-              <span class="card-name--price">300 грн</span>
-            </div>
-          </div>
-          <div class="products-card">
-            <img src="./img/products/frame.jpg" class="card--img" />
-            <div class="card-name">
-              <span class="card-name--text">Рамка (300)</span>
-              <span class="card-name--price">520 грн</span>
-            </div>
-          </div>
-          <div class="products-card sold">
-            <img src="./img/products/corps.jpg" class="card--img" />
-            <div class="card-name">
-              <span class="card-name--text">Корпус (145)</span>
-              <span class="card-name--price">145 грн</span>
-            </div>
-          </div>
-          <div class="products-card">
-            <img src="./img/products/corps.jpg" class="card--img" />
-            <div class="card-name">
-              <span class="card-name--text">Корпус (230)</span>
-              <span class="card-name--price">230 грн </span>
-            </div>
-          </div>
-          <div class="products-card">
-            <img src="./img/products/corps.jpg" class="card--img" />
-            <div class="card-name">
-              <span class="card-name--text">Корпус (300)</span>
-              <span class="card-name--price">300 грн</span>
-            </div>
-          </div>
-          <div class="products-card sold">
-            <img src="./img/products/cover.png" class="card--img" />
-            <div class="card-name">
-              <span class="card-name--text">Кришка</span>
-              <span class="card-name--price">999 грн</span>
-            </div>
-          </div>
-          <div class="products-card">
-            <img src="./img/products/bottom.jpg" class="card--img" />
-            <div class="card-name">
-              <span class="card-name--text">Дно</span>
-              <span class="card-name--price">1000 грн</span>
-            </div>
-          </div>
+        <div class="loader"></div>
+        <div id="gallery">
         </div>
       </section>
     </main>
@@ -113,5 +86,29 @@
         </a>
       </div>
     </footer>
+    <section class="popup">
+      <div class="popup--body">
+        <div class="popup--content">
+          <div class="popup--header">
+            <span class="card-name--text popup--text"></span>
+            <button type="button" class="popup--cross">&times;</button>
+          </div>
+          <div class="popup--img"></div>
+          <div class="popup--description"></div>
+          <div class="popup--buttons">
+            <a href="./delivery.html" class="popup--order">Замовити</a>
+            <button type="button" class="popup--close">Закрити</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./js/index.js"></script>
+    <script src="./js/createCard.js"></script>
+    <script src="./js/remanent.js"></script>
+    <script src="./js/theme.js"></script>
+    <script src="./js/popup.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/favourite.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>

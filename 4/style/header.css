@@ -4,9 +4,11 @@
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 10px 20px;
-  padding: 10px 0;
+  width: 100%;
+  padding: 10px;
   background: url(../img/header-bg.jpg) center no-repeat;
   background-size: cover;
+  z-index: 2;
 }
 
 .header--logo {
@@ -39,9 +41,19 @@
 }
 
 .header--navigation--link:hover {
-  color: var(----active-link-color);
+  color: var(--active-link-color);
 }
 
 .phone:hover {
   opacity: 0.6;
+}
+
+@media screen and (max-width: 768px) {
+  .header--logo-text {
+    display: none;
+  }
+
+  .header--navigation {
+    display: none;
+  }
 }
